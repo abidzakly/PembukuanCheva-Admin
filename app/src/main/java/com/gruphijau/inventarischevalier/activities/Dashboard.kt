@@ -47,7 +47,6 @@ class Dashboard : BaseActivity() {
         listLaporan.add(DashboardData(4, "Barang Masuk"))
         listLaporan.add(DashboardData(5, "Supplier"))
 
-
         adapterBarang = DashboardAdapter(listBarang, this)
         binding.rvBarang.adapter = adapterBarang
         binding.rvBarang.layoutManager = LinearLayoutManager(this)
@@ -86,7 +85,7 @@ class Dashboard : BaseActivity() {
                 binding.laporanLine.setImageDrawable(null)
                 counterLaporan--
             } else if (counterLaporan == 0){
-            val newCount = 4
+            val newCount = 5
             adapterLaporan.setItemCount(newCount)
             binding.dropdownLaporan.setImageResource(R.drawable.icon_dropdown_after)
             binding.laporanLine.setImageResource(R.drawable.dropdown_line)
